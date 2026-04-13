@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peperoni 陪陪肉肉｜行政小助理招募中</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-pink: #FFDDE2;
+            --soft-purple: #F3E8FF;
+            --accent-pink: #FF8BA7;
+            --deep-purple: #7C5EB7;
+            --text-main: #4A4A4A;
+            --bg-gradient: linear-gradient(135deg, #FFFBFC 0%, #FDF2F8 100%);
+        }
+
+        body {
+            font-family: 'Noto Sans TC', 'Poppins', sans-serif;
+            color: var(--text-main);
+            background: var(--bg-gradient);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 24px;
+        }
+
+        .hero-text-glow {
+            text-shadow: 0 0 20px rgba(255, 139, 167, 0.2);
+        }
+
+        .cta-button {
+            background: linear-gradient(90deg, #FF8BA7 0%, #FFA5BA 100%);
+            box-shadow: 0 4px 15px rgba(255, 139, 167, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 139, 167, 0.6);
+            filter: brightness(1.05);
+        }
+
+        .floating-element {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .list-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-pink);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .hand-drawn-border {
+            border: 2px solid var(--accent-pink);
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        }
+
+        .kuse-branding {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.875rem;
+            color: #9C9C9C;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .kuse-branding:hover {
+            color: var(--accent-pink);
+        }
+
+        .kuse-branding svg {
+            height: 1.2em;
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 640px) {
+            .hero-title {
+                font-size: 1.75rem !important;
+                line-height: 1.3;
+            }
+        }
+    </style>
+</head>
+<body class="max-w-[500px] mx-auto shadow-2xl bg-white min-h-screen relative">
+
+    <!-- Hero Section (No Image) -->
+    <header class="pt-12 pb-8 px-6 text-center bg-[#FFF5F7]">
+        <div class="inline-block px-4 py-1 rounded-full bg-[#FF8BA7] text-white text-sm font-bold tracking-widest mb-4">
+            RECRUITMENT
+        </div>
+        <h1 class="hero-title text-3xl font-bold text-[#7C5EB7] mb-4 tracking-tight leading-tight hero-text-glow">
+            【Peperoni 陪陪肉肉】<br>行政小助理 招募中！
+        </h1>
+        <p class="text-[#A388D2] font-medium text-lg leading-relaxed">
+            🐾 生活乏味，也要在生活裡<br>做點療癒又有成就感的小事。
+        </p>
+
+        <!-- Top CTA -->
+        <div class="mt-8">
+            <a href="https://lin.ee/tPZd8Gp" class="cta-button inline-flex items-center justify-center w-full py-4 rounded-2xl text-white font-bold text-lg">
+                立即申請加入
+            </a>
+        </div>
+    </header>
+
+    <!-- Middle Image Section -->
+   
+
+    <!-- Content Sections -->
+    <main class="px-6 space-y-8 pb-12">
+        
+        <!-- Introduction -->
+        <article class="glass-card p-6 border-l-4 border-[#FF8BA7]">
+            <h2 class="text-[#7C5EB7] font-bold text-xl mb-3 flex items-center">
+                <span class="mr-2">✨</span> 任務介紹
+            </h2>
+            <p class="text-gray-600 leading-relaxed">
+                這不是一份需要照顧貓狗或面對客人的工作，而是一份讓你在靜靜輸入資料時，就能感受到秩序與溫度的任務。
+            </p>
+        </article>
+
+        <!-- Tasks -->
+        <section>
+            <h2 class="text-[#7C5EB7] font-bold text-xl mb-4 text-center">你可以做的事</h2>
+            <div class="grid gap-3">
+                <div class="bg-white p-4 rounded-2xl border border-[#F3E8FF] shadow-sm flex items-center">
+                    <span class="list-dot"></span>
+                    <span class="text-gray-700">整理每日進出貨商品資訊</span>
+                </div>
+                <div class="bg-white p-4 rounded-2xl border border-[#F3E8FF] shadow-sm flex items-center">
+                    <span class="list-dot"></span>
+                    <span class="text-gray-700">更新會員資料與消費紀錄</span>
+                </div>
+                <div class="bg-white p-4 rounded-2xl border border-[#F3E8FF] shadow-sm flex items-center">
+                    <span class="list-dot"></span>
+                    <span class="text-gray-700">檢查商品庫存、價格與上架狀況</span>
+                </div>
+                <div class="bg-white p-4 rounded-2xl border border-[#F3E8FF] shadow-sm flex items-center">
+                    <span class="list-dot"></span>
+                    <span class="text-gray-700">發現錯誤資料時，回報給主管</span>
+                </div>
+            </div>
+            <p class="text-center text-xs text-gray-400 mt-3">※ 我們提供完整教學，不需專業背景，只要細心即可上手。</p>
+        </section>
+
+        <!-- Compensation -->
+        <section class="bg-[#FDF2F8] p-6 rounded-[32px] relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h2 class="text-[#FF8BA7] font-bold text-xl mb-4">待遇與福利</h2>
+            <ul class="space-y-3">
+                <li class="flex justify-between items-center border-b border-pink-100 pb-2">
+                    <span class="text-gray-600 font-medium">時薪報酬</span>
+                    <span class="text-[#7C5EB7] font-bold">NT$300~380/h</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-pink-100 pb-2">
+                    <span class="text-gray-600 font-medium">激勵獎金</span>
+                    <span class="text-[#7C5EB7] font-bold">年終 / 績效獎勵</span>
+                </li>
+                <li class="flex justify-between items-center">
+                    <span class="text-gray-600 font-medium">安心保障</span>
+                    <span class="text-[#7C5EB7] font-bold">完整勞健保與津貼</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Reward Mode -->
+        <section class="hand-drawn-border p-6 bg-white text-center">
+            <h2 class="text-[#7C5EB7] font-bold text-lg mb-2">🏆 週週獎勵模式</h2>
+            <p class="text-gray-600 text-sm mb-4">主管每週推薦三位優秀夥伴</p>
+            <div class="text-2xl font-bold text-[#FF8BA7] mb-1">額外發放 $3,000</div>
+            <div class="text-xs text-gray-400">專屬於細心且熱愛秩序的你</div>
+        </section>
+
+        <!-- Closing Statement -->
+        <p class="text-center text-[#A388D2] font-medium px-4 italic">
+            「加入我們，讓你的生活節奏中，<br>多一份穩定與秩序的溫柔力量。」
+        </p>
+
+        <!-- Bottom CTA -->
+        <div class="pt-4 pb-8">
+            <a href="https://lin.ee/tPZd8Gp" class="cta-button flex items-center justify-center w-full py-5 rounded-2xl text-white font-bold text-xl">
+                立即申請加入
+            </a>
+            <p class="text-center text-xs text-gray-400 mt-4">點擊後將跳轉至 LINE 官方帳號進行申請</p>
+        </div>
+    </main>
+
+    <!-- Footer & Branding -->
+    <footer class="bg-gray-50 pt-8">
+       
+    </footer>
+
+    <script src="https://cdn.kuse.ai/sdk.prd.js"></script>
+    <script>
+        // Smooth reveal for sections
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = `1`;
+                    entry.target.style.transform = `translateY(0)`;
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll(`section, article`).forEach(el => {
+            el.style.opacity = `0`;
+            el.style.transform = `translateY(20px)`;
+            el.style.transition = `all 0.6s ease-out`;
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html></html>
